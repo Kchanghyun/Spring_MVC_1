@@ -14,6 +14,10 @@ import java.util.Enumeration;
  * http://localhost:8080/request-param?username=hello&age=20
  */
 
+/**
+ * @Servlet의 urlPatterns에 선언해놓은 경로로 HTTP 요청이 들어오면
+ * 서블릿의 service() 메서드가 자동으로 호출되고 request로 전달이 됨. response로 결과를 보낼 수 있음.
+ */
 @WebServlet(name = "requestParamServlet", urlPatterns = "/request-param")
 public class RequestParamServlet extends HttpServlet {
 
