@@ -37,7 +37,7 @@ public class SpringMemberControllerV3 {
         return "save-result";
     }
 
-    //    @RequestMapping
+    //    @RequestMapping <- 뒤에 아무것도 안 적으면 클래스 @ReqeustMapping에 적혀있는 기본 경로임.
 //    @RequestMapping(value = "", method = RequestMethod.GET)
     @GetMapping
     public String members(Model model) {
